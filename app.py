@@ -15,18 +15,40 @@ map = folium.Map(location=[22.5726, 88.3639], zoom_start=12)
 
 for index, row in data.iterrows():
     folium.CircleMarker(
-        location=[row['latitude'], row['longitude']],
+        location=[row['Latitude'], row['Longitude']],  
         radius=5,
-        color='red' if row['cluster'] == 0 else 'blue',
-        fill=True
+        color='red' if row['cluster'] == 0 else 'blue',  
+        fill=True,
+        popup=f"Place: {row['Place Name']}, Severity: {row['Accident Severity']}"  
     ).add_to(map)
+
 
 folium_static(map)
 
 st.header("Check Accident Risk for a Location")
-latitude = st.number_input("Enter Latitude", value=22.5726)
-longitude = st.number_input("Enter Longitude", value=88.3639)
 
-if st.button("Predict"):
+place_names = data['Place Name'].unique()  
+selected_place = st.selectbox("Select a Place", place_names)
+
+selected_data = data[data['Place Name'] == selected_place].iloc[0]
+latitude = selected_data['Latitude'] 
+longitude = selected_data['Longitude']  
+
+st.write(f"Selected Place: {selected_place}")
+st.write(f"Coordinates: {latitude}, {longitude}")
+
+if st.button("Predict Accident Risk"):
     prediction = model.predict([[latitude, longitude]])
-    st.write(f"This location is in cluster {prediction[0]} (0 = high risk).")
+    cluster = prediction[0]
+
+    risk_levels = {
+        0: "High Risk",
+        1: "Medium Risk",
+        2: "Low Risk",
+        3: "Very Low Risk",
+        4: "No Risk"
+    }
+
+    risk_level = risk_levels.get(cluster, "Unknown Risk")
+    
+    st.write(f"**Prediction:** This location is classified as **{risk_level}**.")

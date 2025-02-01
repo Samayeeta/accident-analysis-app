@@ -1,11 +1,25 @@
-latitude,longitude,accident_severity,date,time
-22.5726,88.3639,High,2023-01-15,8:30:00
-22.5667,88.3667,Medium,2023-02-10,18:45:00
-22.575,88.368,High,2023-03-05,12:15:00
-22.569,88.372,Low,2023-04-20,9:00:00
-22.58,88.37,High,2023-05-12,14:20:00
-22.565,88.375,Medium,2023-06-18,17:30:00
-22.57,88.38,High,2023-07-22,10:45:00
-22.578,88.385,Low,2023-08-30,20:00:00
-22.572,88.39,High,2023-09-14,7:15:00
-22.574,88.395,Medium,2023-10-05,19:30:00
+Place Name,Latitude,Longitude,Accident Severity,Date,Time
+R G Kar Road,22.589,88.373,High,2023-01-15,8:30 AM
+R G Kar Road,22.5895,88.3735,Medium,2023-02-10,6:45 PM
+R G Kar Road,22.59,88.374,Low,2023-03-05,10:15 AM
+Rafi Ahmed Kidwai Road,22.56,88.363,High,2023-01-20,9:00 AM
+Rafi Ahmed Kidwai Road,22.5605,88.3635,Medium,2023-02-25,7:30 PM
+Rafi Ahmed Kidwai Road,22.561,88.364,Low,2023-03-15,11:45 AM
+SN Banerjee Road,22.57,88.37,High,2023-01-25,8:00 AM
+SN Banerjee Road,22.5705,88.3705,Medium,2023-02-15,6:00 PM
+SN Banerjee Road,22.571,88.371,Low,2023-03-10,12:30 PM
+Free School Street,22.55,88.353,High,2023-01-30,7:45 AM
+Free School Street,22.5505,88.3535,Medium,2023-02-20,5:30 PM
+Free School Street,22.551,88.354,Low,2023-03-20,1:00 PM
+AJC Bose Road,22.54,88.35,High,2023-02-05,9:30 AM
+AJC Bose Road,22.5405,88.3505,Medium,2023-02-28,8:00 PM
+AJC Bose Road,22.541,88.351,Low,2023-03-25,2:15 PM
+Park Street,22.5515,88.3525,High,2023-01-10,10:00 AM
+Park Street,22.552,88.353,Medium,2023-02-12,7:00 PM
+Park Street,22.5525,88.3535,Low,2023-03-18,12:00 PM
+Shakespeare Sarani,22.542,88.3515,High,2023-01-22,8:45 AM
+Shakespeare Sarani,22.5425,88.352,Medium,2023-02-18,6:15 PM
+Shakespeare Sarani,22.543,88.3525,Low,2023-03-22,1:30 PM
+EM Bypass,22.53,88.36,High,2023-01-18,9:15 AM
+EM Bypass,22.5305,88.3605,Medium,2023-02-22,7:45 PM
+EM Bypass,22.531,88.361,Low,2023-03-28,2:45 PM
