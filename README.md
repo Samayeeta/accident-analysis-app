@@ -15,6 +15,5 @@ This system leverages **machine learning** and **geospatial analysis** to enhanc
 ✅ **Accident Reporting** – Users can submit accident details with geolocation.  
 ✅ **Risk Prediction** – AI model estimates accident likelihood for given coordinates.  
 ✅ **Data Insights** – Provides analytics on accident trends (time, location, cause).  
-✅ **User Authentication** – Secure login system for authorized data entry.  
 
 ---
