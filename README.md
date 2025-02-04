@@ -6,8 +6,9 @@ The **Kolkata Accident Risk Assessment System** is a **data-driven web applicati
 - **Allow users to report accidents** with location, time, and severity.  
 - **Predict accident risk levels** based on historical data.  
 
-This system leverages **machine learning** and **geospatial analysis** to enhance road safety in Kolkata.
+![Interactive Map](screenshots/first.png)
 
+This system leverages **machine learning** and **geospatial analysis**.
 ---
 
 ## 📌 Features  
@@ -17,3 +18,7 @@ This system leverages **machine learning** and **geospatial analysis** to enhanc
 ✅ **Data Insights** – Provides analytics on accident trends (time, location, cause).  
 
 ---
+
+## Risk Prediction
+ 
+![Accident Reporting](screenshots/risk_test.png)
